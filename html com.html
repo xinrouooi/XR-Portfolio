@@ -1,0 +1,201 @@
+<p>```html</p>
+<p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html lang="zh-CN"&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&lt;meta charset="UTF-8"&gt;</p>
+<p>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p>&lt;title&gt;Xin Rou | Art of Life - Visual Design Portfolio&lt;/title&gt;</p>
+<p>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
+<p>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
+<p>&lt;link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet"&gt;</p>
+<p>&lt;style&gt;</p>
+<p>:root {</p>
+<p>--accent: #B78A8A; /* 延续你的藕粉色 */</p>
+<p>}</p>
+<p>body {</p>
+<p>font-family: 'Inter', sans-serif;</p>
+<p>background-color: #FDFBF7;</p>
+<p>color: #1A1A1A;</p>
+<p>scroll-behavior: smooth;</p>
+<p>}</p>
+<p>.serif { font-family: 'Playfair Display', serif; }</p>
+<p>/* 网格背景装饰 - 代表采购逻辑 */</p>
+<p>.grid-bg {</p>
+<p>background-image: linear-gradient(#e5e5e5 1px, transparent 1px), linear-gradient(90deg, #e5e5e5 1px, transparent 1px);</p>
+<p>background-size: 50px 50px;</p>
+<p>}</p>
+<p>.reveal {</p>
+<p>opacity: 0;</p>
+<p>transform: translateY(30px);</p>
+<p>transition: all 0.8s ease-out;</p>
+<p>}</p>
+<p>.reveal.active {</p>
+<p>opacity: 1;</p>
+<p>transform: translateY(0);</p>
+<p>}</p>
+<p>.nav-link {</p>
+<p>position: relative;</p>
+<p>transition: color 0.3s;</p>
+<p>}</p>
+<p>.nav-link::after {</p>
+<p>content: '';</p>
+<p>position: absolute;</p>
+<p>width: 0;</p>
+<p>height: 1px;</p>
+<p>bottom: -2px;</p>
+<p>left: 0;</p>
+<p>background-color: var(--accent);</p>
+<p>transition: width 0.3s;</p>
+<p>}</p>
+<p>.nav-link:hover::after { width: 100%; }</p>
+<p>.project-card:hover img {</p>
+<p>transform: scale(1.05);</p>
+<p>}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body class="grid-bg"&gt;</p>
+<p>&lt;!-- 导航栏 --&gt;</p>
+<p>&lt;nav class="fixed top-0 w-full z-50 px-8 py-6 flex justify-between items-center mix-blend-difference text-white md:text-black md:mix-blend-normal"&gt;</p>
+<p>&lt;div class="text-xl font-bold tracking-tighter serif"&gt;XIN ROU.&lt;/div&gt;</p>
+<p>&lt;div class="hidden md:flex space-x-12 text-sm uppercase tracking-widest"&gt;</p>
+<p>&lt;a href="#home" class="nav-link"&gt;首页&lt;/a&gt;</p>
+<p>&lt;a href="#about" class="nav-link"&gt;关于&lt;/a&gt;</p>
+<p>&lt;a href="#works" class="nav-link"&gt;作品&lt;/a&gt;</p>
+<p>&lt;a href="#contact" class="nav-link"&gt;联系&lt;/a&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;div class="md:hidden text-2xl"&gt;☰&lt;/div&gt;</p>
+<p>&lt;/nav&gt;</p>
+<p>&lt;!-- 英雄页 (Hero Section) --&gt;</p>
+<p>&lt;section id="home" class="min-h-screen flex flex-col justify-center px-8 md:px-24"&gt;</p>
+<p>&lt;p class="text-sm uppercase tracking-[0.5em] mb-4 text-gray-500"&gt;Visual Design Portfolio | 2026&lt;/p&gt;</p>
+<p>&lt;h1 class="text-7xl md:text-9xl serif leading-tight"&gt;</p>
+<p>Art of &lt;br&gt;</p>
+<p>&lt;span class="italic text-[#B78A8A]"&gt;Life&lt;/span&gt;</p>
+<p>&lt;/h1&gt;</p>
+<p>&lt;div class="mt-12 max-w-lg"&gt;</p>
+<p>&lt;p class="text-lg leading-relaxed text-gray-600"&gt;</p>
+<p>从电子元件采购的结构化逻辑，到视觉设计的表达自由。我用系统的思维构建品牌叙事。</p>
+<p>&lt;/p&gt;</p>
+<p>&lt;div class="mt-8 flex space-x-6"&gt;</p>
+<p>&lt;a href="#works" class="px-8 py-3 bg-[#1A1A1A] text-white text-sm uppercase tracking-widest hover:bg-[#B78A8A] transition-colors"&gt;浏览作品集&lt;/a&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;/section&gt;</p>
+<p>&lt;!-- 关于与理念 (About &amp; Philosophy) --&gt;</p>
+<p>&lt;section id="about" class="py-32 px-8 md:px-24 bg-white bg-opacity-80"&gt;</p>
+<p>&lt;div class="grid md:grid-cols-2 gap-20 items-center"&gt;</p>
+<p>&lt;div class="reveal"&gt;</p>
+<p>&lt;h2 class="text-xs uppercase tracking-[0.3em] text-[#B78A8A] mb-4 font-bold"&gt;设计哲学&lt;/h2&gt;</p>
+<p>&lt;h3 class="text-4xl serif mb-8"&gt;Designer's Soul x Buyer's Logic&lt;/h3&gt;</p>
+<p>&lt;p class="text-gray-600 mb-6 leading-relaxed"&gt;</p>
+<p>在 Celestica 和 Flex 的 4 年多采购经验磨练了我的逻辑。对我而言，设计也是一种“采购”：寻找正确的视觉元素，在理性的框架下优化资源，实现最终的视觉愿景。</p>
+<p>&lt;/p&gt;</p>
+<p>&lt;div class="space-y-4"&gt;</p>
+<p>&lt;div class="flex justify-between items-end border-b border-gray-100 pb-2"&gt;</p>
+<p>&lt;span class="text-sm font-semibold uppercase"&gt;系统逻辑 (SAP/ERP)&lt;/span&gt;</p>
+<p>&lt;span class="serif italic text-xl"&gt;95%&lt;/span&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;div class="flex justify-between items-end border-b border-gray-100 pb-2"&gt;</p>
+<p>&lt;span class="text-sm font-semibold uppercase"&gt;视觉拼贴 &amp; 合成&lt;/span&gt;</p>
+<p>&lt;span class="serif italic text-xl"&gt;90%&lt;/span&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;div class="flex justify-between items-end border-b border-gray-100 pb-2"&gt;</p>
+<p>&lt;span class="text-sm font-semibold uppercase"&gt;排版 &amp; 品牌身份&lt;/span&gt;</p>
+<p>&lt;span class="serif italic text-xl"&gt;85%&lt;/span&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;div class="relative reveal" style="transition-delay: 200ms;"&gt;</p>
+<p>&lt;div class="aspect-[4/5] bg-gray-100 overflow-hidden"&gt;</p>
+<p>&lt;img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&amp;fit=crop&amp;q=80&amp;w=800" alt="Xin Rou 的创意空间" class="w-full h-full object-cover"&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;div class="absolute -bottom-10 -left-10 p-10 bg-[#B78A8A] text-white hidden md:block"&gt;</p>
+<p>&lt;p class="serif italic text-2xl"&gt;"Every choice must be deliberate."&lt;/p&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;/section&gt;</p>
+<p>&lt;!-- 作品展示 (Selected Works) --&gt;</p>
+<p>&lt;section id="works" class="py-32 px-8 md:px-24"&gt;</p>
+<p>&lt;div class="flex justify-between items-end mb-20"&gt;</p>
+<p>&lt;div&gt;</p>
+<p>&lt;h2 class="text-xs uppercase tracking-[0.3em] text-[#B78A8A] mb-4 font-bold"&gt;精选作品&lt;/h2&gt;</p>
+<p>&lt;h3 class="text-5xl serif"&gt;Selected Works&lt;/h3&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;div class="grid md:grid-cols-2 gap-16"&gt;</p>
+<p>&lt;!-- 项目 1 --&gt;</p>
+<p>&lt;div class="project-card reveal"&gt;</p>
+<p>&lt;div class="overflow-hidden aspect-video bg-gray-200 mb-6"&gt;</p>
+<p>&lt;img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Escapism 章节" class="w-full h-full object-cover transition-transform duration-700"&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;h4 class="text-2xl serif mb-2"&gt;The "Escapism" Chapter&lt;/h4&gt;</p>
+<p>&lt;p class="text-sm text-gray-500 uppercase tracking-widest mb-4"&gt;数字拼贴 / 艺术探索&lt;/p&gt;</p>
+<p>&lt;p class="text-gray-600 mb-6 line-clamp-2"&gt;探索在结构化工作与自由灵魂之间的平衡点。通过复古纸张纹理和自然意象创造一个视觉上的“避风港”。&lt;/p&gt;</p>
+<p>&lt;a href="#" class="text-xs uppercase tracking-widest border-b border-black pb-1 hover:text-[#B78A8A] hover:border-[#B78A8A] transition-all"&gt;查看详情&lt;/a&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;!-- 项目 2 --&gt;</p>
+<p>&lt;div class="project-card reveal" style="transition-delay: 200ms;"&gt;</p>
+<p>&lt;div class="overflow-hidden aspect-video bg-gray-200 mb-6"&gt;</p>
+<p>&lt;img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="Bonjour Cafe 品牌" class="w-full h-full object-cover transition-transform duration-700"&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;h4 class="text-2xl serif mb-2"&gt;Bonjour Cafe Branding&lt;/h4&gt;</p>
+<p>&lt;p class="text-sm text-gray-500 uppercase tracking-widest mb-4"&gt;品牌身份 / 包装设计&lt;/p&gt;</p>
+<p>&lt;p class="text-gray-600 mb-6 line-clamp-2"&gt;利用视觉传达“手作的温度”。结合牛皮纸纹理和复古邮戳，打造一个充满故事感的咖啡品牌。&lt;/p&gt;</p>
+<p>&lt;a href="#" class="text-xs uppercase tracking-widest border-b border-black pb-1 hover:text-[#B78A8A] hover:border-[#B78A8A] transition-all"&gt;查看详情&lt;/a&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;!-- 项目 3 --&gt;</p>
+<p>&lt;div class="project-card reveal"&gt;</p>
+<p>&lt;div class="overflow-hidden aspect-video bg-gray-200 mb-6"&gt;</p>
+<p>&lt;img src="https://images.unsplash.com/photo-1549490349-8643362247b5?auto=format&amp;fit=crop&amp;q=80&amp;w=1000" alt="艺术空间展览" class="w-full h-full object-cover transition-transform duration-700"&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;h4 class="text-2xl serif mb-2"&gt;Contemporary Art Space&lt;/h4&gt;</p>
+<p>&lt;p class="text-sm text-gray-500 uppercase tracking-widest mb-4"&gt;展览设计 / 海报排版&lt;/p&gt;</p>
+<p>&lt;p class="text-gray-600 mb-6 line-clamp-2"&gt;高对比度的黑白美学。利用负空间让艺术品“呼吸”，并采用条形码灵感的视觉节奏进行排版。&lt;/p&gt;</p>
+<p>&lt;a href="#" class="text-xs uppercase tracking-widest border-b border-black pb-1 hover:text-[#B78A8A] hover:border-[#B78A8A] transition-all"&gt;查看详情&lt;/a&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;/section&gt;</p>
+<p>&lt;!-- 联系方式 (Contact) --&gt;</p>
+<p>&lt;section id="contact" class="py-32 px-8 md:px-24 bg-[#1A1A1A] text-white"&gt;</p>
+<p>&lt;div class="max-w-4xl mx-auto text-center reveal"&gt;</p>
+<p>&lt;h2 class="text-xs uppercase tracking-[0.5em] text-[#B78A8A] mb-8 font-bold"&gt;开始合作&lt;/h2&gt;</p>
+<p>&lt;h3 class="text-5xl md:text-7xl serif mb-12"&gt;Let's build something &lt;br&gt; &lt;span class="italic"&gt;deliberate.&lt;/span&gt;&lt;/h3&gt;</p>
+<p>&lt;div class="grid md:grid-cols-3 gap-10 mt-20"&gt;</p>
+<p>&lt;div&gt;</p>
+<p>&lt;p class="text-xs uppercase tracking-widest text-gray-500 mb-2"&gt;邮箱&lt;/p&gt;</p>
+<p>&lt;p class="text-lg"&gt;xinrouooi27@gmail.com&lt;/p&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;div&gt;</p>
+<p>&lt;p class="text-xs uppercase tracking-widest text-gray-500 mb-2"&gt;电话&lt;/p&gt;</p>
+<p>&lt;p class="text-lg"&gt;+60 16-261 5270&lt;/p&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;div&gt;</p>
+<p>&lt;p class="text-xs uppercase tracking-widest text-gray-500 mb-2"&gt;社交媒体&lt;/p&gt;</p>
+<p>&lt;p class="text-lg"&gt;LinkedIn: xin-rou-ooi&lt;/p&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;p class="mt-32 text-gray-600 text-xs tracking-widest uppercase"&gt;© 2026 Xin Rou Ooi. All Rights Reserved.&lt;/p&gt;</p>
+<p>&lt;/div&gt;</p>
+<p>&lt;/section&gt;</p>
+<p>&lt;script&gt;</p>
+<p>// 滚动显示动画</p>
+<p>function reveal() {</p>
+<p>var reveals = document.querySelectorAll(".reveal");</p>
+<p>for (var i = 0; i &lt; reveals.length; i++) {</p>
+<p>var windowHeight = window.innerHeight;</p>
+<p>var elementTop = reveals[i].getBoundingClientRect().top;</p>
+<p>var elementVisible = 150;</p>
+<p>if (elementTop &lt; windowHeight - elementVisible) {</p>
+<p>reveals[i].classList.add("active");</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p>window.addEventListener("scroll", reveal);</p>
+<p>// 初始化</p>
+<p>reveal();</p>
+<p>&lt;/script&gt;</p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p>
+<p>```</p>
